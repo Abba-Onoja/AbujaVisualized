@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AbujaVisualized — Understand the City</title>
+  <meta name="description" content="AbujaVisualized helps residents, students, and professionals navigate and understand Nigeria's capital city through original data, crowdsourced projects, and research." />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="AbujaVisualized — Understand the City" />
+  <meta property="og:description" content="Make Abuja Understandable" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--NAVIGATION-->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">AbujaVisualized</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#Atlas">Atlas</a>
+        <a href="#Contribute">Contribute</a>
+        <a href="#About">About</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="header-rule"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h3 class="hero-headline">AbujaVisualized is...
+      <div class="hero-carousel-text" aria-live="polite">
+        <span class="carousel-word", id="carouselWord">the platform that makes Abuja understandable.</span>
+        <span class="hero-carousel-text__item" hidden>the internet's best source on Abuja.</span>
+        <span class="hero-carousel-text__item" hidden>built by residents, for residents.</span>
+        <span class="hero-carousel-text__item" hidden>where data meets the city.</span>
+      </div>
+
+      
+    </div>
+    </h3>
+
+
+
+
+    <div class="hero-sub-row">
+      
+      <div class="hero-ctas">
+        <a href="#work" class="btn-primary">Join the project</a>
+        
+      </div>
+    </div>
+    <div class="hero-rule"></div>
+    
+  </section>
+
+  <!--WORK / PROJECTS / Articles-->
+  <section class="section" id="work">
+    <div class="section-header">
+      <span class="section-label">Section 01 · Projects & Articles</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="work-header-row">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">FORNOWML</button>
+        <button class="filter-btn" data-filter="analysis">FORNOWAnalysis</button>
+        <button class="filter-btn" data-filter="viz">FORNOWVisualisation</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- Add an image as the background of each project card, the images would be blurred for contrast with text-->
+
+      <!-- 2a: Abuja Urban Atlas -->
+      <article class="project-card clickable-card"
+               data-tags="ml analysis"
+               data-href="https://abuja-rental-prediction.streamlit.app">
+        <div class="project-meta-row">
+          <span class="project-tag">Machine Learning · Streamlit</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-title">Abuja<br/>Urban Atlas</h3>
+        <p class="project-desc">The Abuja atlas is an ongoing guide to the people, places and geography of Nigeria's capital. It brings together neighborhoods, districtss, landmarks, parks, markets, institutions and public spaces into one resource. Through maps, data and stories, the Atlas helps explain not just where places are, but why they matter and how they fit into the larger story of Abuja.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>BeautifulSoup</span><span>Streamlit</span><span>Plotly</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Random Forest · R² 0.761</span>
+          <a href="https://github.com/Abba-Onoja/Abuja-Rental-Prediction-With-Streamlit"
+             target="_blank"
+             class="project-link-github"
+             onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 2b: The Abuja Transit Guide — -->
+      <article class="project-card clickable-card"
+               data-tags="ml analysis"
+               data-href="https://github.com/Abba-Onoja/Tip-Prediction-Using-ML-Models">
+        <div class="project-meta-row">
+          <span class="project-tag">Regression · Analysis</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">The Abuja<br/>Transit Guide</h3>
+        <p class="project-desc">Getting around Abuja isn't always straightforward. The Abuja Transit Guide brings together public transit routes, car parks, fares and key transit hubs into one place. Help build Abuja's first community-powered transit guide. Submit transit routes, car parks, one-chance points, transport fares and route information to make getting around the city easier for everyone.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span><span>Jupyter</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">5 Models · GridSearchCV Tuning</span>
+          <a href="https://github.com/Abba-Onoja/Tip-Prediction-Using-ML-Models"
+             target="_blank"
+             class="project-link-github"
+             onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+      <!-- 2c: The Informal Food Map -->
+      <article class="project-card clickable-card"
+               data-tags="analysis viz"
+               data-href="https://compound-interest-calculator-with.streamlit.app">
+        <div class="project-meta-row">
+          <span class="project-tag">Project · Map</span>
+          <span class="project-year coming-soon-badge">Contribute</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-title">The <br/>Informal Food Map</h3>
+        <p class="project-desc">Some of Abuja's best meals aren't inside a restaurant. This community-built project documents roadside vendors, bukas, masa sellers, suya spots, kiosks and hidden local favourites across the city. Know a great suya spot? A roadside akara seller? A hidden buka? Help document Abuja's informal food scene by adding local vendors that deserve to be on the map.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Streamlit</span><span>Pandas</span><span>Plotly</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Dual Scenario · CSV Export</span>
+          <a href="https://github.com/Abba-Onoja/Compound-Interest-Calculator-With-Streamlit"
+             target="_blank"
+             class="project-link-github"
+             onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 2d: Service Gap Finder — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis">
+        <div class="project-meta-row">
+          <span class="project-tag">Geospatial · Analysis</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">Service Gap Finder<br/>for Abuja</h3>
+        <p class="project-desc">A lot of residential areas in Abuja — particularly the satellite towns — lack access to basic everyday services like laundry and last-mile logistics. This project maps those gaps. It identifies neighbourhoods where residents have to travel unreasonable distances to access a simple service, using publicly available location data and proximity analysis. The goal is a clear, visual picture of where service demand exists but supply does not.</p>
+        <div class="project-stack">
+          <span>Python</span><span>GeoPandas</span><span>Folium</span><span>Pandas</span><span>Streamlit</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Proximity Analysis · Mapping</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+      <!-- 2e: Agricultural Policy Monitor — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis ml">
+        <div class="project-meta-row">
+          <span class="project-tag">NLP · Policy · LLM</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">Abuja<br/>Business Report</h3>
+        <p class="project-desc">Nigerian agricultural policy is scattered across government portals that most people never read. This Streamlit app pulls from those sources, aggregates the relevant documents, and uses a language model to surface plain-English summaries of new policies, regulatory changes, and funding announcements. The intended user is a farmer, cooperative, or agribusiness that needs to stay informed without spending hours parsing government language.</p>
+        <div class="project-stack">
+          <span>Python</span><span>LLM API</span><span>BeautifulSoup</span><span>Streamlit</span><span>Pandas</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Web Scraping · LLM Summarisation</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+      <!-- 2e: Agricultural Policy Monitor — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis ml">
+        <div class="project-meta-row">
+          <span class="project-tag">NLP · Policy · LLM</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">The Abuja<br/>Rental Market</h3>
+        <p class="project-desc">Nigerian agricultural policy is scattered across government portals that most people never read. This Streamlit app pulls from those sources, aggregates the relevant documents, and uses a language model to surface plain-English summaries of new policies, regulatory changes, and funding announcements. The intended user is a farmer, cooperative, or agribusiness that needs to stay informed without spending hours parsing government language.</p>
+        <div class="project-stack">
+          <span>Python</span><span>LLM API</span><span>BeautifulSoup</span><span>Streamlit</span><span>Pandas</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Web Scraping · LLM Summarisation</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+      <!-- 2e: FCT Infrastructure tracker -->
+      <article class="project-card coming-soon-card" data-tags="analysis ml">
+        <div class="project-meta-row">
+          <span class="project-tag">NLP · Policy · LLM</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">FCT<br/>Infrastructure Tracker</h3>
+        <p class="project-desc">The FCT infrastructure tracker monitors the public projects shaping Abuja and the surrounding Federal capital. With mr. project himself at the helm of affairs the nations's capital has seen a significant increase in the number of infrastructure projects being carried out.This has lead to alot of discussions among residents about the pace of several projects, this project brings a quantitative''angle' to the discussion. </p>
+        <div class="project-stack">
+          <span>Python</span><span>LLM API</span><span>BeautifulSoup</span><span>Streamlit</span><span>Pandas</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Web Scraping · LLM Summarisation</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+      <!-- 2e: Hidden Gems Map — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis ml">
+        <div class="project-meta-row">
+          <span class="project-tag">NLP · Policy · LLM</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">Hidden<br/>Gems Map</h3>
+        <p class="project-desc">Nigerian agricultural policy is scattered across government portals that most people never read. This Streamlit app pulls from those sources, aggregates the relevant documents, and uses a language model to surface plain-English summaries of new policies, regulatory changes, and funding announcements. The intended user is a farmer, cooperative, or agribusiness that needs to stay informed without spending hours parsing government language.</p>
+        <div class="project-stack">
+          <span>Python</span><span>LLM API</span><span>BeautifulSoup</span><span>Streamlit</span><span>Pandas</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Web Scraping · LLM Summarisation</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+      <!-- 2e: Our parliamentarians — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis ml">
+        <div class="project-meta-row">
+          <span class="project-tag">NLP · Policy · LLM</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">Our parliamentarians</h3>
+        <p class="project-desc">This project tracks our elected parliamentarians both in the senate and house of reps.Nigerian agricultural policy is scattered across government portals that most people never read. This Streamlit app pulls from those sources, aggregates the relevant documents, and uses a language model to surface plain-English summaries of new policies, regulatory changes, and funding announcements. The intended user is a farmer, cooperative, or agribusiness that needs to stay informed without spending hours parsing government language.</p>
+        <div class="project-stack">
+          <span>Python</span><span>LLM API</span><span>BeautifulSoup</span><span>Streamlit</span><span>Pandas</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Web Scraping · LLM Summarisation</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+
+
+  <!--crowdsourced projects -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-label">Section 02 · Community</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <div class="photo-placeholder">Contribute</div>
+        </div>
+    </div>
+  </section>
+
+ <!--newsletter -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-label">Section 02 · Newsletter</span>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <form class="newsletter-form" aria-label="Newsletter signup">
+        <label for="newsletter-email" class="newsletter-form__label">Subscribe to our newsletter</label>
+        <input type="email" id="newsletter-email" name="email" class="newsletter-form__input" placeholder="Enter your email" required>
+        <button type="submit" class="button-primary newsletter-form__submit">Subscribe</button>
+      </form>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">AbujaVisualized</span>
+        <span class="footer-tagline">Data Blog · Abuja, Nigeria · 2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/AbujaVisualized/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AbujaVisualized" target="_blank">GitHub</a>
+        <a href="https://instagram.com/AbujaVisualized" target="_blank">Instagram</a>
+        <a href="https://x.com/AbujaVisualized" target="_blank">X(Formely Twitter)</a>
+
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AbujaVisualized. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
